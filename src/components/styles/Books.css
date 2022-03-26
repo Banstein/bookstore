@@ -1,0 +1,56 @@
+
+.books {
+  margin: 50px auto;
+  height: 100vh;
+}
+
+.book {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  justify-content: space-between;
+  margin: 10px auto;
+  background-color: white;
+}
+
+.book > div {
+  padding: 30px;
+}
+
+.left-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+}
+
+.interface {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.interface > :first-child {
+  padding-right: 20px;
+}
+
+.interface > :not(:first-child) {
+  padding: 0 20px;
+}
+
+.interface > :not(:last-child) {
+  border-right: rgba(161, 160, 160, 0.918) solid 1px;
+}
+
+.prog {
+  border-right: rgba(161, 160, 160, 0.918) solid 3px;
+  height: 100%;
+  display: flex;
+}
+
+.prog h4 {
+  align-self: flex-end;
+}
+
+.right-block {
+  border: 1px solid black;
+}
