@@ -1,0 +1,17 @@
+nav {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid;
+  padding: 30px;
+  margin: 20px auto;
+}
+
+nav h1 {
+  margin-right: 10px;
+}
+
+.links * {
+  color: black;
+  margin-right: 5px;
+}
