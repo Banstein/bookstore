@@ -25,6 +25,7 @@ In order to run on your local machine, type in;
 
 - `npx create-react-app bookstrore`
 - `cd bookstrore`
+- `npm install`
 - `npm start`
 
 Runs the app in the development mode.\
