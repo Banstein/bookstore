@@ -1,5 +1,5 @@
-export const ADD_BOOK = 'addBook';
-export const REMOVE_BOOK = 'removeBook';
+const ADD_BOOK = 'bookstore/books/ADD_BOOK';
+const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 
 const INITIAL_STATE = [];
 
