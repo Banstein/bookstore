@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { CircularProgressbar } from 'react-circular-progressbar';
-import { removeBook } from '../redux/books/books';
 import 'react-circular-progressbar/dist/styles.css';
+import { getBooks, removeBook } from '../redux/books/books';
 
 const Book = () => {
   const books = useSelector((state) => state.booksReducer);
   const dispatch = useDispatch();
   const percentage = 66;
+  useEffect(() => {
+    dispatch(getBooks());
+  }, []);
   if (books !== []) {
     return (
       <>
