@@ -1,15 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto+Slab:wght@300;400;700;900&display=swap');
+
+.book * {
+  font-family: 'Roboto Slab', serif;
+}
 
 .books {
-  margin: 50px auto;
+  margin: auto;
   height: 100vh;
+  background-color: #fafafa;
+  padding: 2.4em 6.25em;
 }
 
 .book {
   display: grid;
   grid-template-columns: 4fr 1fr;
   justify-content: space-between;
-  margin: 10px auto;
+  margin: 0 auto 20px auto;
   background-color: white;
+  border: solid 1px #e8e8e8;
+  border-radius: 4px;
+  height: 10.625rem;
 }
 
 .book > div {
@@ -20,7 +30,33 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid black;
+}
+
+.category {
+  opacity: 0.5;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  margin-bottom: 2px;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 1.5em;
+  letter-spacing: -0.2px;
+}
+
+.author {
+  margin-bottom: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.interface *,
+.author {
+  color: #4386bf;
+  font-weight: 300;
 }
 
 .interface {
@@ -41,16 +77,62 @@
   border-right: rgba(161, 160, 160, 0.918) solid 1px;
 }
 
-.prog {
-  border-right: rgba(161, 160, 160, 0.918) solid 3px;
-  height: 100%;
-  display: flex;
+.interface li button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1em;
 }
 
-.prog h4 {
-  align-self: flex-end;
+.precent {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.number {
+  font-size: 1.4em;
+}
+
+.real {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.prog {
+  border-right: rgba(161, 160, 160, 0.185) solid 3px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+
+.cur-chapter {
+  font-size: 0.8em;
+  font-weight: 300;
+  opacity: 0.5;
+  margin-bottom: 0.5em;
+}
+
+.chapter {
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+.update {
+  background-color: #0290ff;
+  padding: 10px 50px;
+  border: none;
+  font-weight: 300;
+  color: white;
+  border-radius: 3px;
 }
 
 .right-block {
-  border: 1px solid black;
+  width: 220px;
+}
+
+hr {
+  opacity: 0.2;
+  margin: 50px 0 40px 0;
 }

@@ -1,7 +1,45 @@
-.book-add {
-  display: flex;
+.book-add * {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.book-add button {
-  padding: 10px 30px;
+.add {
+  font-size: 1.25rem;
+  opacity: 0.5;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+form input::placeholder {
+  padding-left: 15px;
+  opacity: 0.5;
+}
+
+.book-title {
+  padding-left: 35px;
+  width: 50%;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+}
+
+.book-author {
+  padding-left: 25px;
+  width: 22%;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+}
+
+.btn-add {
+  width: 15%;
+  font-family: 'Roboto Slab', serif;
+  background-color: #0290ff;
+  color: white;
+  letter-spacing: 0.5px;
+  border: none;
+  border-radius: 3px;
+  height: 40px;
+  white-space: nowrap;
 }

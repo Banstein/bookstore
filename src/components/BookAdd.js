@@ -22,10 +22,11 @@ const BookAdd = () => {
 
   return (
     <div className="book-add">
+      <h1 className="add">ADD NEW BOOK</h1>
       <form onSubmit={handleSubmit}>
-        <input type="text" name="title" placeholder="Book Title" className="bookTitle" value={title} onChange={(e) => setTitle(e.target.value)} required />
-        <input type="text" name="author" placeholder="Book Author" className="bookAuthor" value={author} onChange={(e) => setAuthor(e.target.value)} required />
-        <button type="submit">ADD BOOK</button>
+        <input type="text" name="title" placeholder="Book Title" className="book-title" value={title} onChange={(e) => setTitle(e.target.value)} required maxLength="60" />
+        <input type="text" name="author" placeholder="Book Author" className="book-author" value={author} onChange={(e) => setAuthor(e.target.value)} required maxLength="40" />
+        <button type="submit" className="btn-add">ADD BOOK</button>
       </form>
     </div>
   );

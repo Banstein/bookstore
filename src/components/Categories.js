@@ -7,7 +7,7 @@ function Categories() {
   const stats = useSelector((state) => state.categoriesReducer);
   return (
     <div>
-      <button type="button" className="submitBtn" onClick={() => dispatch(status())}>
+      <button type="button" className="update" onClick={() => dispatch(status())}>
         Check Status
       </button>
       {stats}
