@@ -1,13 +1,14 @@
 # Bookstrore
 
-"Math magicians" is a website for all fans of mathematics.
+"Bookstore" is a website for all fans of readers.
 ## Screenshots
 
-Not Available yet
+![Bookstore](https://user-images.githubusercontent.com/35707975/161389318-0b07b115-4a27-4093-b59f-ef4416341a09.png)
+
 
 ## Live Demo
 
-For the live demo check this [Link](https://animated-torrone-777daf.netlify.app/)
+Not Available yet
 
 
 ## Built With
