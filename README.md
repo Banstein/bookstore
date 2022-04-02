@@ -1,6 +1,6 @@
 # Bookstrore
 
-"Bookstore" is a website for all fans of readers.
+"Bookstore" is a website for all readers fans.
 ## Screenshots
 
 ![Bookstore](https://user-images.githubusercontent.com/35707975/161389318-0b07b115-4a27-4093-b59f-ef4416341a09.png)
