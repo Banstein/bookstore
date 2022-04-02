@@ -6,6 +6,7 @@ import BookAdd from './BookAdd';
 const Books = () => (
   <div className="books">
     <Book />
+    <hr />
     <BookAdd />
   </div>
 );

@@ -1,4 +1,8 @@
 body {
-  background-color: whitesmoke;
-  padding: 20px 30px;
+  background-color: #f5f6fa;
+  padding: 9.313rem 7.688rem;
+}
+
+.App {
+  box-shadow: 1px 20px 20px 20px rgb(0 0 0 / 6%);
 }

@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
 import { getBooks, removeBook } from '../redux/books/books';
 
 const Book = () => {
   const books = useSelector((state) => state.booksReducer);
   const dispatch = useDispatch();
+  const percentage = 66;
   useEffect(() => {
     dispatch(getBooks());
   }, []);
@@ -15,23 +18,29 @@ const Book = () => {
           <div className="book" key={book.id}>
             <div className="left-block">
               <div className="one">
-                <h2 className="category">category</h2>
+                <h2 className="category">Category</h2>
                 <h3 className="title">{book.title}</h3>
                 <h4 className="author">{book.author}</h4>
                 <ul className="interface">
-                  <li>comment</li>
+                  <li>Comment</li>
                   <li><button type="button" onClick={() => dispatch(removeBook(book.id))}>Remove</button></li>
-                  <li>edit</li>
+                  <li>Edit</li>
                 </ul>
               </div>
               <div className="prog">
-                <h4>Completed %</h4>
+                <div className="precent">
+                  <CircularProgressbar value={percentage} text={`${percentage}%`} />
+                </div>
+                <div>
+                  <div className="number">{`${percentage}%`}</div>
+                  <div className="real">Completed</div>
+                </div>
               </div>
             </div>
             <div className="right-block">
-              <h2 className="cur-chapter">currentChapter</h2>
-              <h3 className="chapter">chapter</h3>
-              <button type="button" className="update" id={book.id}>updateProgress</button>
+              <h2 className="cur-chapter">CURRENT CHAPTER</h2>
+              <h3 className="chapter">Chapter 12</h3>
+              <button type="button" className="update" id={book.id}>Update Progress</button>
             </div>
           </div>
         ))}
