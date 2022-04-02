@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-Not Available yet
+For the link to the live demo, [Click here](https://banstein-bookstore.herokuapp.com/)
 
 
 ## Built With
