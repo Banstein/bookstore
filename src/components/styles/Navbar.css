@@ -38,6 +38,13 @@ nav {
 }
 
 .profile {
+  padding: 5px;
   font-size: 40px;
   color: #0290ff;
+  border: 1px solid rgba(128, 128, 128, 0.388);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }

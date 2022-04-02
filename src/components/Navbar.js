@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Navbar.css';
 import { Link } from 'react-router-dom';
-import { MdAccountCircle } from 'react-icons/md';
+import { MdPermIdentity } from 'react-icons/md';
 
 function Navbar() {
   return (
@@ -13,7 +13,7 @@ function Navbar() {
           <Link to="/Categories">CATEGORIES</Link>
         </div>
       </div>
-      <MdAccountCircle className="profile" />
+      <MdPermIdentity className="profile" />
     </nav>
   );
 }
