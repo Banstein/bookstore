@@ -1,4 +1,4 @@
-# Bookstrore
+# Bookstore
 
 "Bookstore" is a website for all readers fans.
 ## Screenshots
@@ -24,8 +24,8 @@ clone repo: https://github.com/Banstein/bookstrore.git
 
 In order to run on your local machine, type in;
 
-- `npx create-react-app bookstrore`
-- `cd bookstrore`
+- `npx create-react-app bookstore`
+- `cd bookstore`
 - `npm install`
 - `npm start`
 
